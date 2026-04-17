@@ -2,11 +2,14 @@
 //  AFOOnlinePlay.h
 //  AFOOnlinePlay
 //
-//  Created by zhaoyun on 2026/4/17.
-//
 
 #import <Foundation/Foundation.h>
 
-@interface AFOOnlinePlay : NSObject
+//! Project version number for AFOOnlinePlay.
+FOUNDATION_EXPORT double AFOOnlinePlayVersionNumber;
 
-@end
+//! Project version string for AFOOnlinePlay.
+FOUNDATION_EXPORT const unsigned char AFOOnlinePlayVersionString[];
+
+#import <AFOOnlinePlay/AFOOPMainController.h>
+

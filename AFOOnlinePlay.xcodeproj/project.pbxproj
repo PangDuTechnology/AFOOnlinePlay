@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		144484E82F92241C008EE2E1 /* AFOOnlinePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 144484E72F92241C008EE2E1 /* AFOOnlinePlay.m */; };
-		144484E92F92241C008EE2E1 /* AFOOnlinePlay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 144484E62F92241C008EE2E1 /* AFOOnlinePlay.h */; };
+		144484F42F922481008EE2E1 /* AFOOPMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144484F22F922481008EE2E1 /* AFOOPMainController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +17,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				144484E92F92241C008EE2E1 /* AFOOnlinePlay.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +24,9 @@
 
 /* Begin PBXFileReference section */
 		144484E32F92241C008EE2E1 /* libAFOOnlinePlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFOOnlinePlay.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		144484E62F92241C008EE2E1 /* AFOOnlinePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFOOnlinePlay.h; sourceTree = "<group>"; };
-		144484E72F92241C008EE2E1 /* AFOOnlinePlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFOOnlinePlay.m; sourceTree = "<group>"; };
+		144484F02F922481008EE2E1 /* AFOOnlinePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOOnlinePlay.h; sourceTree = "<group>"; };
+		144484F22F922481008EE2E1 /* AFOOPMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOOPMainController.m; sourceTree = "<group>"; };
+		144484F32F922481008EE2E1 /* AFOOPMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOOPMainController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +43,7 @@
 		144484DA2F92241C008EE2E1 = {
 			isa = PBXGroup;
 			children = (
-				144484E52F92241C008EE2E1 /* AFOOnlinePlay */,
+				144484EF2F922481008EE2E1 /* AFOOnlinePlay */,
 				144484E42F92241C008EE2E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,13 +56,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		144484E52F92241C008EE2E1 /* AFOOnlinePlay */ = {
+		144484EF2F922481008EE2E1 /* AFOOnlinePlay */ = {
 			isa = PBXGroup;
 			children = (
-				144484E62F92241C008EE2E1 /* AFOOnlinePlay.h */,
-				144484E72F92241C008EE2E1 /* AFOOnlinePlay.m */,
+				144484F02F922481008EE2E1 /* AFOOnlinePlay.h */,
+				144484F12F922481008EE2E1 /* controller */,
 			);
 			path = AFOOnlinePlay;
+			sourceTree = "<group>";
+		};
+		144484F12F922481008EE2E1 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				144484F32F922481008EE2E1 /* AFOOPMainController.h */,
+				144484F22F922481008EE2E1 /* AFOOPMainController.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				144484E82F92241C008EE2E1 /* AFOOnlinePlay.m in Sources */,
+				144484F42F922481008EE2E1 /* AFOOPMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +259,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XP5ZBK9EN;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -263,6 +272,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XP5ZBK9EN;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
