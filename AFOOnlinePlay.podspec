@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/PangDuTechnology/AFOOnlinePlay'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'PangDu' => 'xian312117@gmail.com' }
-  s.source           = { :git => 'https://github.com/PangDuTechnology/AFOOnlinePlay.git', :tag => "0.0.3" }
+  s.source           = { :git => 'https://github.com/PangDuTechnology/AFOOnlinePlay.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '13.0'
   s.requires_arc = true
